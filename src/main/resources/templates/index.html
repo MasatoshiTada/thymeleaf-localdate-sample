@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Top</title>
+</head>
+<body>
+    <form th:object="${sampleForm}">
+        <input type="text" name="name" th:field="*{name}">
+        <input type="date" name="birthday" th:field="*{birthday}">
+    </form>
+</body>
+</html>
